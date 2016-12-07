@@ -12,11 +12,12 @@ It also has command line interface (CLI) which gives interactive console (REPL),
 
 Supported PropertyWare APIs are the following:
 
-- All
+- echoString
+- getPortfolioList
 
 ## Documentation
 
-See documentation in http://jspw.github.io/ .
+See documentation in http://jspw.github.io/ (coming soon).
 
 ## Releases
 
