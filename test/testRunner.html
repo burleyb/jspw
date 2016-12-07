@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>Test'em</title>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mocha/2.4.5/mocha.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/mocha/2.4.5/mocha.js"></script>
+<script src="/testem.js"></script>
+<script>mocha.setup('bdd')</script>
+<script src="/build/jspw-core.js"></script>
+<script src="/build/jspw-api-analytics.js"></script>
+<script src="/build/jspw-api-apex.js"></script>
+<script src="/build/jspw-api-bulk.js"></script>
+<script src="/build/jspw-api-chatter.js"></script>
+<script src="/build/jspw-api-metadata.js"></script>
+<script src="/build/jspw-api-soap.js"></script>
+<script src="/build/jspw-api-streaming.js"></script>
+<script src="/build/jspw-api-tooling.js"></script>
+<script src="/build/test.js"></script>
+</head>
+<body>
+<div id="mocha"></div>
+<script>
+mocha.retries(2).run();
+</script>
+</body>
+</html>
