@@ -1,10 +1,10 @@
 # jspw 
 
-PropertyWare API Library for JavaScript applications (both on web browser and Node.js)
+PropertyWare API Library for JavaScript applications (Node.js)
 
 ## Overview
 
-JSPW is an isomorphic JavaScript Library utilizing PropertyWare's API: It works both in the browser and with Node.js.
+JSPW is a JavaScript Library utilizing PropertyWare's API: It works with Node.js.
 
 It encapsulates the access to various APIs provided by PropertyWare in asynchronous JavaScript function calls.
 
@@ -12,11 +12,12 @@ It also has command line interface (CLI) which gives interactive console (REPL),
 
 Supported PropertyWare APIs are the following:
 
-- All
+- echoString
+- getPortfolioList
 
 ## Documentation
 
-See documentation in http://jspw.github.io/ .
+See documentation in http://jspw.github.io/ (coming soon).
 
 ## Releases
 
