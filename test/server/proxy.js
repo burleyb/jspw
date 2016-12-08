@@ -28,12 +28,12 @@ app.all('/proxy/?*', function(req, res) {
     return res.end();
   }
   var contentType = "application/x-www-form-urlencoded";
-  var sfEndpoint = req.headers["salesforceproxy-endpoint"];
-  if (!/^https:\/\/[a-zA-Z0-9\.\-]+\.(force|salesforce|database)\.com\//.test(sfEndpoint)) {
+  var sfEndpoint = req.headers["propertywareproxy-endpoint"];
+  if (!/^https:\/\/[a-zA-Z0-9\.\-]+\.(force|propertyware|database)\.com\//.test(sfEndpoint)) {
     return res.send(400, "Proxying endpoint is not allowed.");
   }
   var params = {
-    url: sfEndpoint || "https://login.salesforce.com//services/oauth2/token",
+    url: sfEndpoint || "https://login.propertyware.com//services/oauth2/token",
     method: req.method,
     headers: {
       "Content-Type": req.headers["content-type"],

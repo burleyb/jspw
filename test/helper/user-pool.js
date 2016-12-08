@@ -26,7 +26,7 @@ UserPool.prototype.checkout = function() {
   var config = this._config;
   var conn = this._conn;
   return this._login.then(function() {
-    return conn.apex.post('/JSforceTestUserPool/', { clientName: config.poolClient }).then(function(res) {
+    return conn.apex.post('/JSpwTestUserPool/', { clientName: config.poolClient }).then(function(res) {
       if (res.username) {
         console.log('Username:', res.username);
         return res.username;
@@ -41,7 +41,7 @@ UserPool.prototype.checkout = function() {
 };
 
 UserPool.prototype.checkin = function(username) {
-  return this._conn.apex.delete('/JSforceTestUserPool/' + username);
+  return this._conn.apex.delete('/JSpwTestUserPool/' + username);
 };
 
 module.exports = UserPool;

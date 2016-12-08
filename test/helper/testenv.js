@@ -45,7 +45,7 @@ TestEnv.prototype.establishConnection = function(conn, done) {
 
 TestEnv.prototype.closeConnection = function(conn, done) {
   var userPool = this._userPool;
-  return conn.apex.delete('/JSforceTestData/').then(function() {
+  return conn.apex.delete('/JSpwTestData/').then(function() {
     return (
       userPool ?
       userPool.checkin(conn.__username) :

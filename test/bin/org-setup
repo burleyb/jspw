@@ -6,7 +6,7 @@ var archive = archiver('zip');
 archive.bulk({
   expand: true,
   cwd: __dirname + '/../package',
-  src: [ 'JSforceTestSuite/**' ]
+  src: [ 'JSpwTestSuite/**' ]
 });
 archive.finalize();
 
@@ -44,12 +44,12 @@ conn.login(process.env.SF_USERNAME, process.env.SF_PASSWORD)
     }
   })
   .then(function() {
-    return conn.sobject('PushTopic').count({ Name: 'JSforceTestAccountUpdates' });
+    return conn.sobject('PushTopic').count({ Name: 'JSpwTestAccountUpdates' });
   })
   .then(function(count) {
     if (count === 0) {
       return conn.sobject('PushTopic').create({
-        Name: 'JSforceTestAccountUpdates',
+        Name: 'JSpwTestAccountUpdates',
         Query: 'SELECT Id, Name FROM Account',
         ApiVersion: conn.version,
         NotifyForFields: 'Referenced',

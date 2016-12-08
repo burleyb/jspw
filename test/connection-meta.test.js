@@ -5,7 +5,7 @@ var TestEnv = require('./helper/testenv'),
 var async  = require('async'),
     _      = require('lodash/core'),
     sf     = require('../lib/jspw'),
-    config = require('./config/salesforce');
+    config = require('./config/propertyware');
 
 var testEnv = new TestEnv(config);
 

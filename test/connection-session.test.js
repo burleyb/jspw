@@ -6,7 +6,7 @@ var async  = require('async'),
     _      = require('lodash/core'),
     authorize = require('./helper/webauth'),
     sf     = require('../lib/jspw'),
-    config = require('./config/salesforce');
+    config = require('./config/propertyware');
 
 /**
  *

@@ -4,7 +4,7 @@ var TestEnv = require('./helper/testenv'),
 
 var _ = require('lodash/core'),
     sf = require('../lib/jspw'),
-    config = require('./config/salesforce');
+    config = require('./config/propertyware');
 
 var testEnv = new TestEnv(config);
 
@@ -63,23 +63,23 @@ describe("soap", function() {
     var leads = [{
       FirstName: 'Convert Test #1',
       LastName: 'Lead',
-      Company: 'JSforce Test'
+      Company: 'JSpw Test'
     }, {
       FirstName: 'Convert Test #2',
       LastName: 'Lead',
-      Company: 'JSforce Test'
+      Company: 'JSpw Test'
     }, {
       FirstName: 'Merge Test (Master)',
       LastName: 'Lead',
-      Company: 'JSforce Test'
+      Company: 'JSpw Test'
     }, {
       FirstName: 'Merge Test (Merging #1)',
       LastName: 'Lead',
-      Company: 'JSforce Test'
+      Company: 'JSpw Test'
     }, {
       FirstName: 'Merge Test (Merging #2)',
       LastName: 'Lead',
-      Company: 'JSforce Test'
+      Company: 'JSpw Test'
     }];
 
     before(function(done) {

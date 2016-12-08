@@ -1,5 +1,5 @@
 {
-  "name": "node-salesforce-proxy",
+  "name": "node-propertyware-proxy",
   "private": true,
   "dependencies": {
     "express": "*",
